@@ -1,4 +1,4 @@
-package com.nxsakib.ecommercespring.dto;
+package com.nxsakib.ecommercespring.dtos;
 
 import lombok.*;
 
