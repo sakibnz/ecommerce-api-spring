@@ -1,6 +1,7 @@
 package com.nxsakib.ecommercespring.configurations;
 
 import com.nxsakib.ecommercespring.gateways.api.IFakeStoreCategoryApi;
+import com.nxsakib.ecommercespring.gateways.api.IFakeStoreProductApi;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -23,5 +24,10 @@ public class RetrofitConfig {
     @Bean
     public IFakeStoreCategoryApi fakeStoreCategoryApi(Retrofit retrofit) {
         return retrofit.create(IFakeStoreCategoryApi.class);
+    }
+
+    @Bean
+    public IFakeStoreProductApi fakeStoreProductApi(Retrofit retrofit) {
+        return retrofit.create(IFakeStoreProductApi.class);
     }
 }
