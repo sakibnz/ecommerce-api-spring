@@ -10,8 +10,15 @@ import org.springframework.stereotype.Component;
 @NoArgsConstructor
 @Builder
 public class ProductDTO {
-    private String id;
+    private long id;
     private String title;
     private String image;
-    private String price;
+    private double price;
+    private String color;
+    private String description;
+    private double discount;
+    private String model;
+    private String brand;
+    private boolean popular;
+    private long categoryId;
 }

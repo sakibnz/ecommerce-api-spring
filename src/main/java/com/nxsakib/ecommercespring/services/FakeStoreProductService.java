@@ -19,4 +19,14 @@ public class FakeStoreProductService implements IProductService {
     public List<ProductDTO> getProductsByCategory(String category) throws IOException {
         return productsByCategoryGateway.getProductsByCategory(category);
     }
+
+    @Override
+    public ProductDTO getProductById(Long id) {
+        return null;
+    }
+
+    @Override
+    public ProductDTO createProduct(ProductDTO productDTO) {
+        return null;
+    }
 }
